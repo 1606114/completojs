@@ -15,4 +15,4 @@
 - Clique com o botão direito do mouse em `index.html` e selecione a opção `Open with Live Server`
 
 ## Netlify
-- [Acessar o projeto no Netlify]()
+- [Acessar o projeto no Netlify](https://ex-completojs.netlify.app/)
