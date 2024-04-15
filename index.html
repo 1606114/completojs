@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Completo JS</title>
-    <link rel="stylesheet" href="style.css">
-    <script src=""></script>
+    <link rel="stylesheet" href="layout.css">
+    <script src="soma.js"></script>
+    <script src="requisicoes.js"></script>
+    <script src="index.js"></script>
 </head>
+
 <body>
-    <h1>Exercício completo de JS + GRID + Flex + Media QUery</h1>
+
+    <header>
+        <h1>Home</h1>
+        <a href="#">Principal</a>
+        <a href="contato.html">Contato</a>
+    </header>
+
+    <main>
+        <div>
+            Soma
+            <input type="number" name="" id="inputNumeroUm">
+            <input type="number" name="" id="inputNumeroDois">
+            <button onclick="processarSoma()">Somar</button>
+
+            <div id="resultadoSoma">
+                Resultado: 0
+            </div>
+        </div>
+
+        <div>
+            Pokemon
+            <input type="text" name="" id="idPokemon">
+            <button onclick="processarPokemon()">Buscar</button>
+
+            <div>
+                <p id="nomePokemon">Nome...</p>
+                <img id="imagemPokemon" src="" alt="">
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
