@@ -13,25 +13,32 @@
 
 <body>
 
-    <header>
-        <h1>Home</h1>
-        <a href="#">Principal</a>
-        <a href="contato.html">Contato</a>
+    <header class="cabecalhoAoLado">
+        <a class="navButton" href="#">Principal</a>
+        <a class="navButton" href="contato.html">Contato</a>
     </header>
 
-    <main>
-        <div>
-            Soma
-            <input type="number" name="" id="inputNumeroUm">
-            <input type="number" name="" id="inputNumeroDois">
-            <button onclick="processarSoma()">Somar</button>
+    <header class="cabecalhoPrincipal">
+        <h1>Treinando</h1>
+    </header>
 
-            <div id="resultadoSoma">
-                Resultado: 0
+    <main class="principal">
+        <div class="card">
+            <div class="coluna">
+                Soma
+                <input type="number" name="" id="inputNumeroUm">
+                <input type="number" name="" id="inputNumeroDois">
+                <button onclick="processarSoma()">Somar</button>
+            </div>
+
+            <div class="coluna">
+                <div id="resultadoSoma">
+                    Resultado: 0
+                </div>
             </div>
         </div>
 
-        <div>
+        <div class="card">
             Pokemon
             <input type="text" name="" id="idPokemon">
             <button onclick="processarPokemon()">Buscar</button>
@@ -42,6 +49,13 @@
             </div>
         </div>
     </main>
+
+    <footer class="rodape">
+        <author>
+            <p>Construído por:</p>
+            <p>Sabino - 2024</p>
+        </author>
+    </footer>
 </body>
 
 </html>
