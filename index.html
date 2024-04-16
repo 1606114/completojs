@@ -25,27 +25,33 @@
     <main class="principal">
         <div class="card">
             <div class="coluna">
-                Soma
-                <input type="number" name="" id="inputNumeroUm">
-                <input type="number" name="" id="inputNumeroDois">
+                <input placeholder="Digite um número" type="number" name="" id="inputNumeroUm">
+                <input placeholder="Digite um número" type="number" name="" id="inputNumeroDois">
                 <button onclick="processarSoma()">Somar</button>
             </div>
 
-            <div class="coluna">
-                <div id="resultadoSoma">
-                    Resultado: 0
+            <div class="coluna caixaResultado">
+                <div class="labelResultado">
+                    Resultado:
+                </div>
+                <div class="valorResultado" id="resultadoSoma">
+                    0
                 </div>
             </div>
         </div>
 
         <div class="card">
-            Pokemon
-            <input type="text" name="" id="idPokemon">
-            <button onclick="processarPokemon()">Buscar</button>
+            <div class="coluna">
+                <input type="text" name="" id="idPokemon">
+                <button onclick="processarPokemon()">Buscar</button>
+            </div>
 
-            <div>
-                <p id="nomePokemon">Nome...</p>
-                <img id="imagemPokemon" src="" alt="">
+            <div class="coluna caixaResultado">
+                <div class="labelResultado">
+                    Nome: <span class="nomePokemon" id="nomePokemon"></span>
+                </div>
+                
+                <img class="imagemResultado" id="imagemPokemon" src="" alt="">
             </div>
         </div>
     </main>
